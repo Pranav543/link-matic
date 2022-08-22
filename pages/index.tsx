@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tip Link</title>
-        <meta name="description" content="Send tip links with crypto" />
+        <title>Link-Matic</title>
+        <meta name="description" content="Send Link-Matics with crypto" />
         {/* <meta property="og:title" content="You received some crypto!" /> */}
         <meta property="og:title" content="Links are now money" />
         <meta property="og:url" content="https://www.tiplink.io" />

@@ -77,7 +77,7 @@ const CreateTipLink = () => {
 
   return (
     <Box width="100%">
-      <ActionsPanelTitleBar title="Create TipLink" backOnClick={goBack} />
+      <ActionsPanelTitleBar title="Create Link-Matic" backOnClick={goBack} />
       {newLink === "" ? (
         <div>
           <Typography

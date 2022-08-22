@@ -100,7 +100,6 @@ export const LinkProvider: FC<LinkProviderProps> = ({
 
   // TODO refactor
   const deposit = async (amt: string) => {
-
     if (web3Provider === undefined || web3Provider === null) {
       alert("Please connect wallet to add money");
       return;
@@ -131,7 +130,7 @@ export const LinkProvider: FC<LinkProviderProps> = ({
     const resp = await fetch(gasStation);
     const content = await resp.json();
     const standardGasPrice =
-      Math.round(content.standard.maxPriorityFee) * 10 ** 9;
+      Math.round(content.fast.maxPriorityFee) * 10 ** 9;
     const estGasFees = BigNumber.from(standardGasPrice * 21000);
     return estGasFees;
   };

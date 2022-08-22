@@ -120,8 +120,8 @@ const MainActionsPanel = () => {
         <Divider />
         <ActionsPanelRow
           icon={<IconRecreate />}
-          title="Recreate this TipLink"
-          subtitle="Move the entire value to a new TipLink so only you have the link."
+          title="Recreate this Link-Matic"
+          subtitle="Move the entire value to a new Link-Matic so only you have the link."
           loading={recreateLoading}
           onClick={recreate}
         />
@@ -129,7 +129,7 @@ const MainActionsPanel = () => {
         <ActionsPanelRow
           icon={<IconWallet />}
           title="Withdraw to your wallet"
-          subtitle="Withdraw the entire value of this TipLink."
+          subtitle="Withdraw the entire value of this Link-Matic."
           loading={withdrawLoading}
           onClick={withdrawAll}
         />

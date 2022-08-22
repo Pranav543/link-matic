@@ -79,7 +79,7 @@ const Main = () => {
 
   const getTopText = () => {
     if (loading) {
-      return "Creating new TipLink...";
+      return "Creating new Link-Matic...";
     }
     if (isNaN(balanceUSD)) {
       return "Loading balance...";
