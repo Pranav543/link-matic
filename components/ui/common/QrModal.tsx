@@ -20,7 +20,7 @@ const QrModal = (props: Props) => {
       open={props.open}
       onClose={props.handleClose}
       aria-labelledby="QR code"
-      aria-describedby="This wallet's public key QR code and text"
+      aria-describedby="This wallet's address QR code and text"
       maxWidth="xs"
     >
       <DialogContent sx={{ padding: "1.5rem", textAlign: "center" }}>
