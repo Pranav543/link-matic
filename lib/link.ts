@@ -48,8 +48,8 @@ export const createLink = async () => {
 }
 
 
-export const insertPublicKey = (k: PublicKey, onInsert: (success: boolean) => void = () => {}) => {
-  const msg = createMsg({publicKey: k.toBase58()});
+export const insertPublicKey = (k: string, onInsert: (success: boolean) => void = () => {}) => {
+  const msg = createMsg({publicKey: k});
   const endpoint = window.location.origin + "/api/insert_public_key";
   fetch(endpoint, msg).then((rr) => {
     onInsert(rr.status == 200);

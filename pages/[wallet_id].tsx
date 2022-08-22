@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { decode as b58decode } from 'bs58';
 import {kdf} from "../lib/crypto";
 import Progress from "../components/ui/common/Progress";
-import { Keypair } from "@solana/web3.js";
+import { ethers } from "ethers";
 
 const getPrivateKey = async (slug: string) => {
   const base = window.location.origin;
@@ -18,12 +18,12 @@ const getPrivateKey = async (slug: string) => {
   const salt = b58decode(content.salt);
   const pwShort = b58decode(window.location.hash.substr(1));
   const seed = await kdf(32, pwShort, salt);
-  const kp = Keypair.fromSeed(seed);
-  return kp.secretKey;
+  const kp = ethers.utils.HDNode.fromSeed(seed);
+  return kp.extendedKey;
 }
 
 const WalletWrapper = () => {
-  const [pk, setPk] = useState<Uint8Array>();
+  const [pk, setPk] = useState<string>();
 
   useEffect(() => {
     const slug = window.location.href.split("/")[3].split("#")[0];
