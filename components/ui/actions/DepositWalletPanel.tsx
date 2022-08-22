@@ -10,7 +10,7 @@ import { useLink } from '../../useLink';
 
 const DepositWalletPanel = () => {
   const { goBack } = useActionState();
-  const [inputAmountMatic, setInputAmountSol] = useState<number>(NaN);
+  const [inputAmountMatic, setInputAmountMatic] = useState<number>(NaN);
   const { extConnected, deposit, scheduleBalanceUpdate } = useLink();
   const [ loading, setLoading ] = useState<boolean>(false);
 
@@ -49,10 +49,10 @@ const DepositWalletPanel = () => {
         }}>
         <CurrencyInput
           fiatCurrency='USD'
-          cryptoCurrency='SOL'
+          cryptoCurrency='MATIC'
           fiatQuickInputOptions={fiatQuickInputDefault}
           cryptoQuickInputOptions={cryptoQuickInputDefault}
-          onValueChange={setInputAmountSol}/>
+          onValueChange={setInputAmountMatic}/>
         <LoadingButton sx={{m: 2, marginTop: '1rem'}} variant="outlined" onClick={depositFromWallet} loading={loading}>
           Deposit
         </LoadingButton>
