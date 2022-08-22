@@ -21,8 +21,8 @@ const SendActionsPanel = () => {
       <Box style={{ textAlign: "center" }}>
         <ActionsPanelRow
           icon={<IconLink />}
-          title="Send as TipLink"
-          subtitle="Create a TipLink with this value that you can share with anyone"
+          title="Send as Link-Matic"
+          subtitle="Create a Link-Matic with this value that you can share with anyone"
           onClick={() => {
             setActionState("createTipLink");
           }}
@@ -30,8 +30,8 @@ const SendActionsPanel = () => {
         <Divider />
         <ActionsPanelRow
           icon={<IconKey />}
-          title="Send to Public Key"
-          subtitle="Send to a Solana wallet address"
+          title="Send to address"
+          subtitle="Send to a wallet address"
           onClick={() => {
             setActionState("sendPubKey");
           }}
