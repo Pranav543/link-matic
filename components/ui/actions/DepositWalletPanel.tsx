@@ -16,7 +16,7 @@ const DepositWalletPanel = () => {
 
   const depositFromWallet = async () => {
     if (!extConnected) {
-      alert('Please connect Solana wallet to deposit.');
+      alert('Please connect your wallet to deposit.');
       return;
     }
     console.log('depositFromWallet ', inputAmountMatic);
