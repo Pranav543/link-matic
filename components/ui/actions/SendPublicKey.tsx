@@ -70,7 +70,7 @@ const SendPublicKey = () => {
           style={{ marginTop: "1rem" }}
           variant="contained"
           onClick={send}
-          disabled={address.length != 44}
+          disabled={address.length != 40}
         >
           Send
         </Button>
