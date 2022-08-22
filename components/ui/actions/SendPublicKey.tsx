@@ -37,7 +37,7 @@ const SendPublicKey = () => {
 
   return (
     <Box width="100%">
-      <ActionsPanelTitleBar title="Send to Public Key" backOnClick={goBack} />
+      <ActionsPanelTitleBar title="Send to Address" backOnClick={goBack} />
       <Typography
         textAlign="center"
         style={{ marginTop: "1rem", marginBottom: "1rem" }}
@@ -53,7 +53,7 @@ const SendPublicKey = () => {
       >
         <TextField
           fullWidth
-          label="Solana Address"
+          label="Address"
           value={address}
           onChange={(e) => {
             setAddress(e.target.value);
@@ -62,7 +62,7 @@ const SendPublicKey = () => {
         <br></br>
         <CurrencyInput
           fiatCurrency="USD"
-          cryptoCurrency="SOL"
+          cryptoCurrency="MATIC"
           useMax={true}
           onValueChange={setInputAmountMatic}
         />
