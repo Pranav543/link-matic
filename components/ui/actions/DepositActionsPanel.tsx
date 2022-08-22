@@ -23,14 +23,14 @@ const DepositActionsPanel = () => {
         <ActionsPanelRow
           icon={<IconWallet />}
           title="Deposit with your wallet"
-          subtitle="Deposit Solana from your connected wallet."
+          subtitle="Deposit Matic from your connected wallet."
           onClick={() => {
             setActionState("depositWallet");
           }}/>
         <Divider />
         <ActionsPanelRow
           icon={<IconQRCode />}
-          title="Deposit to this public key"
+          title="Deposit to this address"
           subtitle="Click to reveal this wallet's public address that you can deposit to."
           onClick={() => {
             setOpen(true);
@@ -38,7 +38,7 @@ const DepositActionsPanel = () => {
         <Divider />
       </Box>
       <QrModal
-        message="Scan this QR with a Solana-compatible wallet or copy the public key below."
+        message="Scan this QR with a EVM-compatible wallet or copy the address below."
         open={open}
         value={linkKeypair.address}
         handleClose={() => {
