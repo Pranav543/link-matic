@@ -34,12 +34,12 @@ const MainActionsPanel = () => {
 
   const withdrawAll = () => {
     if (!extConnected) {
-      alert("Please connect Phantom to withdraw money");
+      alert("Please connect Wallet to withdraw money");
       return;
     }
 
     if (extPublicKey === null || extPublicKey === undefined) {
-      alert("Please connect Phantom to withdraw money");
+      alert("Please connect Wallet to withdraw money");
       return;
     }
 
