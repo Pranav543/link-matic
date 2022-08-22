@@ -126,7 +126,7 @@ export const LinkProvider: FC<LinkProviderProps> = ({
   };
 
   const getFeeEstimate = async () => {
-    const gasStation = "https://gasstation-mumbai.matic.today/v2";
+    const gasStation = "https://gasstation-mainnet.matic.network/v2";
     const resp = await fetch(gasStation);
     const content = await resp.json();
     const standardGasPrice =
@@ -136,7 +136,7 @@ export const LinkProvider: FC<LinkProviderProps> = ({
   };
 
   const getGasPrice = async () => {
-    const gasStation = "https://gasstation-mumbai.matic.today/v2";
+    const gasStation = "https://gasstation-mainnet.matic.network/v2";
     const resp = await fetch(gasStation);
     const content = await resp.json();
     const fastGasPrice = Math.round(content.standard.maxPriorityFee);

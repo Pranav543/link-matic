@@ -23,7 +23,7 @@ const FAQContent = () => {
           <Typography variant="h2">FAQ</Typography>
         </header>
         <div className={styles.faqItem}>
-          <FAQTitle title="What is tiplink?" />
+          <FAQTitle title="What is Link-Matic?" />
           <Typography>
             Link-Matic is a lightweight wallet designed to make transferring
             digital assets as easy as sending a link. Someone with matic can
@@ -69,8 +69,8 @@ const FAQContent = () => {
           <Typography>
             If you want to convert your crypto into dollars that can be
             withdrawn to your bank account, you will need a more serious account
-            like https://www.coinbase.com. Those sites
-            will guide you through the process.
+            like https://www.coinbase.com. Those sites will guide you through
+            the process.
           </Typography>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function FAQ() {
         <title>Link-Matic</title>
         <meta name="description" content="Send Link-Matic with crypto" />
         {/* <meta property="og:title" content="You received some crypto!" /> */}
-        <meta property="og:url" content="https://www.tiplink.io" />
+        <meta property="og:url" content="https://link-matic.netlify.app/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -14,11 +14,10 @@ const Wallet = ({ secretKey }: WalletProps) => {
   const web3Provider = useWeb3Provider();
   const hdWallet = ethers.utils.HDNode.fromExtendedKey(secretKey);
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://rpc.ankr.com/polygon_mumbai"
+    "https://rpc.ankr.com/polygon"
   );
   const linkKeypair = new ethers.Wallet(hdWallet.privateKey, provider);
   const key = "tiplink-" + linkKeypair.address + "-inserted";
-  console.log("key: ", key)
 
   const onInsert = (success: boolean) => {
     // TODO should we insert false so that we don't keep retrying if this doesn't work for w/e reason

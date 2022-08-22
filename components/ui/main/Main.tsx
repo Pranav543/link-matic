@@ -29,7 +29,7 @@ const Main = () => {
   }, []);
 
   /*
-  when you create a tiplink from a tiplink, we open the newly created link in a new tab
+  when you create a Link-Matic from a Link-Matic, we open the newly created link in a new tab
   even when the transaction potentially hasn't gone through yet
   we put a loading indicator on via the URL, so that the UI can let the user know it's not ready yet
   Whenever the balance updates, it's safe to assume the loading is done.
@@ -52,7 +52,7 @@ const Main = () => {
   }, [balanceUSD]);
 
   /*
-  when you create a tiplink with a balance from the front page, 
+  when you create a Link-Matic with a balance from the front page, 
   you don't actually confirm the transaction until this point
   */
   useEffect(() => {

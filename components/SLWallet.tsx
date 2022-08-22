@@ -28,10 +28,10 @@ const SLWallet = () => {
         <title>Link-Matic</title>
         <meta name="description" content="Send Link-Matic with crypto" />
         <meta property="og:title" content="You received some crypto!" />
-        <meta property="og:url" content="https://www.tiplink.io" />
+        <meta property="og:url" content="https://link-matic.netlify.app/" />
         <meta
           property="og:image"
-          content="https://tiplink.io/link-matic-card-preview.png"
+          content="https://link-matic.netlify.app/link-matic-card-preview.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

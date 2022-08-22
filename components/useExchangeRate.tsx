@@ -17,9 +17,8 @@ export interface ExchangeRateProviderProps {
 
 const getPrice = async () => {
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://rpc.ankr.com/polygon_mumbai"
+    "https://rpc.ankr.com/polygon"
   );
-  console.log("key2: ");
 
   const aggregatorV3InterfaceABI = [
     {
@@ -70,7 +69,9 @@ const getPrice = async () => {
       type: "function",
     },
   ];
-  const addr = "0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada";
+  // mainnet - 0xAB594600376Ec9fD91F8e885dADF0CE036862dE0
+  // testnet - 0xd0D5e3DB44DE05E9F294BB0a3bEEaF030DE24Ada
+  const addr = "0xAB594600376Ec9fD91F8e885dADF0CE036862dE0";
   const priceFeed = new ethers.Contract(
     addr,
     aggregatorV3InterfaceABI,
