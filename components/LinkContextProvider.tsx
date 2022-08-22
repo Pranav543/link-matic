@@ -20,7 +20,7 @@ export const LinkProvider: FC<LinkProviderProps> = ({
   const [balance, setBalance] = useState(0);
   const [extConnected, setConnected] = useState(false);
   const [extPublicKey, setExtPublicKey] = useState("");
-  // in USD / SOL
+  // in USD / Matic
   const { exchangeRate } = useExchangeRate();
 
   const getBalanceMatic = async () => {
@@ -100,7 +100,6 @@ export const LinkProvider: FC<LinkProviderProps> = ({
 
   // TODO refactor
   const deposit = async (amt: string) => {
-    // console.log("sendMoney ", amount, " SOL from ", provider.publicKey.toBase58(), " to ", wallet.publicKey.toBase58());
 
     if (web3Provider === undefined || web3Provider === null) {
       alert("Please connect wallet to add money");

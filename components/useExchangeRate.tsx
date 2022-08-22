@@ -84,7 +84,7 @@ const getPrice = async () => {
 export const ExchangeRateProvider: FC<ExchangeRateProviderProps> = ({
   children,
 }) => {
-  // in USD / SOL
+  // in USD / Matic
   const [exchangeRate, setExchangeRate] = useState(NaN);
 
   useEffect(() => {

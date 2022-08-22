@@ -44,38 +44,41 @@ const WalletButton = ({ showWalletButton }: HeaderProps) => {
   return (
     <>
       <Box className={styles.walletContainer}>
-        <Button
-          key={"Connect Wallet"}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            flexGrow: "1",
-            flexBasis: "0",
-            textTransform: "none",
-            maxWidth: "50%",
-          }}
-          variant="outlined"
-          onClick={() => connectWallet()}
-        >
-          {`Connect Wallet`}
-        </Button>
-        <Button
-          key={"disconnect"}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            flexGrow: "1",
-            flexBasis: "0",
-            textTransform: "none",
-            maxWidth: "50%",
-          }}
-          variant="outlined"
-          onClick={() => {
-            disconnectWallet();
-          }}
-        >
-          {`disconnect`}
-        </Button>
+        {web3Provider === null || web3Provider === undefined ? (
+          <Button
+            key={"Connect Wallet"}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flexGrow: "1",
+              flexBasis: "0",
+              textTransform: "none",
+              maxWidth: "100%",
+            }}
+            variant="outlined"
+            onClick={() => connectWallet()}
+          >
+            {`Connect Wallet`}
+          </Button>
+        ) : (
+          <Button
+            key={"disconnect"}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              flexGrow: "1",
+              flexBasis: "0",
+              textTransform: "none",
+              maxWidth: "100%",
+            }}
+            variant="outlined"
+            onClick={() => {
+              disconnectWallet();
+            }}
+          >
+            {`Disconnect Wallet`}
+          </Button>
+        )}
       </Box>
     </>
   );

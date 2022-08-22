@@ -31,7 +31,7 @@ const SLWallet = () => {
         <meta property="og:url" content="https://www.tiplink.io" />
         <meta
           property="og:image"
-          content="https://tiplink.io/tiplink-card-preview.png"
+          content="https://tiplink.io/link-matic-card-preview.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

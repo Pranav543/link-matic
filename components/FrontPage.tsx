@@ -44,7 +44,7 @@ export default function FrontPage() {
 
     if (web3Provider === undefined || web3Provider === null) {
       alert(
-        "Please connect a solana wallet to load value onto a TipLink. Alternatively, create an empty link first."
+        "Please connect a web3 wallet to load value onto a link-matic. Alternatively, create an empty link first."
       );
       return;
     }
@@ -100,11 +100,11 @@ export default function FrontPage() {
               onClick={onClickCreateTipLink}
               loading={loading}
             >
-              Create TipLink
+              Create Link-Matic
             </LoadingButton>
             <Typography>
               Want to deposit value later?{" "}
-              <a onClick={onClickEmptyTipLink}>Create an empty TipLink.</a>
+              <a onClick={onClickEmptyTipLink}>Create an empty Link-Matic.</a>
             </Typography>
           </Box>
 
@@ -113,15 +113,15 @@ export default function FrontPage() {
               <u>How it works</u>
             </Typography>
             <dl>
-              <dt>Create a Tiplink.</dt>
+              <dt>Create a Link-Matic.</dt>
               <dd>
-                It’s like buying a gift card, create a TipLink by depositing how
-                much you want to send.
+                It’s like buying a gift card, create a Link-Matic by depositing
+                how much you want to send.
               </dd>
-              <dt>Share a Tiplink.</dt>
+              <dt>Share a Link-Matic.</dt>
               <dd>
-                Copy the TipLink URL and send it to anyone, or show them the QR
-                code.
+                Copy the Link-Matic URL and send it to anyone, or show them the
+                QR code.
               </dd>
               <dt>That's it.</dt>
               <dd>
@@ -130,7 +130,7 @@ export default function FrontPage() {
               </dd>
             </dl>
             <Typography className={styles.ps}>
-              *Psst, the TipLink is the wallet!
+              *Psst, the Link-Matic is the wallet!
             </Typography>
           </Box>
         </main>

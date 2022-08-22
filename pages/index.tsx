@@ -29,7 +29,7 @@ export default function Home() {
         {/* <meta property="og:title" content="You received some crypto!" /> */}
         <meta property="og:title" content="Links are now money" />
         <meta property="og:url" content="https://www.tiplink.io" />
-        <meta property="og:image" content="https://tiplink.io/tiplink-card-preview.png" />
+        <meta property="og:image" content="https://tiplink.io/link-matic-card-preview.png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:type" content="image/png" />
         <meta name="twitter:card" content="summary_large_image"/>
@@ -37,7 +37,7 @@ export default function Home() {
         <meta name="twitter:title" content="You received some crypto!"/>
         <meta name="twitter:description" content=""/>
         <meta name="twitter:url" content="https://www.tiplink.io"/>
-        <meta name="twitter:image" content="http://tiplink.io/tiplink-card-preview.png"/>
+        <meta name="twitter:image" content="http://tiplink.io/link-matic-card-preview.png"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='wrap'>

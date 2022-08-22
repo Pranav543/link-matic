@@ -16,7 +16,7 @@ const LinkCard = () => {
 
   return(
     <div className={styles.linkCard}>
-      <img src="/tiplink-card.png"/>
+      <img src="/link-matic-card.png"/>
       <div className={styles.cardBalance}>
         {!isNaN(balanceMatic) && <Typography color="magenta">{balanceMatic.toFixed(4)} MATIC</Typography>}
         {!isNaN(balanceUSD) && <Typography className={styles.balanceUSD} variant="h3">${balanceUSD.toFixed(2)}</Typography>}

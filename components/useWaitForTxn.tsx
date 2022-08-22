@@ -1,5 +1,5 @@
-// When we create a new link, we want to redirect the user to their TipLink
-// before we actually send it to RPC endpoint, just in case SOL is slow
+// When we create a new link, we want to redirect the user to their Link-Matic
+// before we actually send it to RPC endpoint, just in case polygon is slow
 // This context allows you to store a pending Txn
 import { createContext, useContext, FC, useState, ReactNode } from "react";
 import { ethers } from "ethers";

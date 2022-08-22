@@ -65,7 +65,7 @@ const WithdrawWallet = () => {
       >
         <CurrencyInput
           fiatCurrency="USD"
-          cryptoCurrency="SOL"
+          cryptoCurrency="MATIC"
           onValueChange={setInputAmountMatic}
           useMax={true}
         />
