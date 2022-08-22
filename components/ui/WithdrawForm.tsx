@@ -42,7 +42,7 @@ function WithdrawForm() {
           </IconButton>
         </DialogTitle>
         <DialogContentText>
-          Please enter a valid Solana address to withrdaw funds. Please be
+          Please enter a valid polygon address to withrdaw funds. Please be
           careful, there isn't any validation.
         </DialogContentText>
         <form
@@ -55,7 +55,7 @@ function WithdrawForm() {
           style={{ padding: "10px" }}
         >
           <TextField
-            label="SOL Address"
+            label="Polygon Address"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             id="destPubKey"
