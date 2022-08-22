@@ -9,6 +9,8 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@0xsequence/ethauth": "0.7.0",
+    "@0xsequence/web3modal": "2.0.2",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@fontsource/poppins": "^4.5.3",
@@ -16,13 +18,11 @@
     "@mui/lab": "^5.0.0-alpha.72",
     "@mui/material": "^5.2.6",
     "@prisma/client": "^3.8.1",
-    "0xsequence": "^0.40.2",
-    "@0xsequence/ethauth": "0.7.0",
-    "@0xsequence/web3modal": "2.0.2",
-    "@walletconnect/web3-provider": "^1.7.1",
-    "ethers": "^5.5.4",
     "@types/bs58": "^4.0.1",
+    "@walletconnect/web3-provider": "^1.7.1",
+    "0xsequence": "^0.40.2",
     "caniuse-lite": "^1.0.30001317",
+    "ethers": "^5.5.4",
     "libsodium": "^0.7.9",
     "libsodium-wrappers": "^0.7.9",
     "material-icons": "^1.10.8",
@@ -32,6 +32,7 @@
     "qrcode.react": "^1.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "sodium-native": "^3.4.1",
     "sodium-plus": "^0.9.0"
   },
   "devDependencies": {
