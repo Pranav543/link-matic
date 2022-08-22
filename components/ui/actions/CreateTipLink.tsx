@@ -95,7 +95,7 @@ const CreateTipLink = () => {
           >
             <CurrencyInput
               fiatCurrency="USD"
-              cryptoCurrency="SOL"
+              cryptoCurrency="MATIC"
               useMax={true}
               onValueChange={setInputAmountMatic}
             />
